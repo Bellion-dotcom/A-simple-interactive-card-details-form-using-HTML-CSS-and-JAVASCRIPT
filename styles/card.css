@@ -23,7 +23,7 @@
 } 
 #front-card{
     position: absolute;
-    top: 20%;
+    top: 25%;
     right: -80px;
     background: url("../Images/bg-card-front.png");
     background-size: cover;
@@ -59,7 +59,7 @@
 
 #back-card{
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     right: -140px;
     background: url("../Images/bg-card-back.png");
     background-size: cover;
