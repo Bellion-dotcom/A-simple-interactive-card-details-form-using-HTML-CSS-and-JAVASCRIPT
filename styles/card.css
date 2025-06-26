@@ -23,7 +23,7 @@
 } 
 #front-card{
     position: absolute;
-    top: 25%;
+    top: 20%;
     right: -80px;
     background: url("../Images/bg-card-front.png");
     background-size: cover;
@@ -59,7 +59,7 @@
 
 #back-card{
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     right: -140px;
     background: url("../Images/bg-card-back.png");
     background-size: cover;
@@ -135,7 +135,7 @@ button{
     cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
     #container {
         display: flex;
         flex-direction: column;
