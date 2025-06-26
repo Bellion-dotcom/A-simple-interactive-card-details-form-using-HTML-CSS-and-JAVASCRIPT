@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="card-page">
+        <div id="front-card">
+          <!-- <img id="card-front" src="./Images/bg-card-front.png" alt=""> -->
+          <img id="card-logo" src="./Images/card-logo.svg" alt="" />
+          <div id="card-details">
+            <p id="num">0000 0000 0000 0000</p>
+            <div id="card-info">
+              <p id="name">JANE APPLESEED</p>
+              <p id="date">00/00</p>
+            </div>
+          </div>
+        </div>
+        <div id="back-card">
+          <!-- <img id="card-back" src="./Images/bg-card-back.png" alt=""> -->
+        </div>
+      </div>
+
+      <div id="form-page">
+        <form id="form" action="">
+          <div id="cardname">
+            <label for="card-name">CARDHOLDER NAME</label><br />
+            <input
+              type="text"
+              id="card-name"
+              placeholder="e.g. Jane Appleseed"
+              oninput="nameDisplay()"
+            /> <br>
+            <span id="required"></span>
+          </div>
+          <div id="number">
+            <label for="card-number">CARD NUMBER</label><br />
+            <input
+              type="text"
+              id="card-number"
+              placeholder="e.g. 1234 5678 9123 0000"
+              oninput="numberDisplay()"
+            /> <br>
+            <span id="required1"></span>
+          </div>
+          <div id="expiry-cvc">
+            <div id="expiry">
+              <label for="card-expiry">EXP. DATE (MM/YY)</label><br />
+              <div id="expiry-inputs">
+                <input
+                  type="number"
+                  id="expiry-month"
+                  placeholder="MM"
+                  oninput="expiryDisplay()"
+                />
+                <input
+                  type="number"
+                  id="expiry-year"
+                  placeholder="YY"
+                  oninput="expiryDisplay()"
+                />
+              </div>
+              <span id="required2"></span>
+            </div>
+            <div id="cvc">
+              <label for="card-cvc">CVC</label><br />
+              <input
+                type="number"
+                id="card-cvc"
+                placeholder="e.g. 123"
+                
+              /> <br>
+              <span id="required3"></span>
+            </div>
+          </div>
+          <button type="submit" id="submit">Confirm</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script/card.js"></script>
+  </body>
+</html>

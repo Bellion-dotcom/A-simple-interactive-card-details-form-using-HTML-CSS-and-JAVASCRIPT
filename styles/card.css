@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+#card-page{
+    position: relative;
+    background: url("../Images/bg-main-desktop.png");
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+} 
+#front-card{
+    position: absolute;
+    top: 25%;
+    right: -80px;
+    background: url("../Images/bg-card-front.png");
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+    border-radius: 7px;
+}
+#card-logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+}
+#card-details{
+    position: absolute;
+    top: 85px;
+    left: 20px;
+}
+#num{
+    font-size: 1.2em;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+#card-info{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    color: white;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+#back-card{
+    position: absolute;
+    bottom: 25%;
+    right: -140px;
+    background: url("../Images/bg-card-back.png");
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+    border-radius: 7px;
+}
+
+#form-page{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center; 
+}
+label{
+    font-weight: bold;
+    font-size: 10px;
+}
+input{
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding-left: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+input:hover{
+    border: 1px solid hsl(278, 94%, 30%);
+}
+#cardname, #number{
+    margin-bottom: 20px;
+}
+#expiry-cvc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-bottom: 20px;
+}
+#expiry{
+    width: 40%;
+    flex-shrink: 0;
+}
+#expiry-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+#expiry-month, #expiry-year{
+    width: 45%;
+    flex-shrink: 0;
+}
+#cvc{
+    width: 52%;
+    flex-shrink: 0;
+}
+#card-cvc{
+    width: 100%;
+}
+
+button{
+    width: 70%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        z-index: 1;
+    }
+    #card-page {
+        position: relative;
+        width: 100vw;
+        height: 40vh;
+        
+    }
+    #front-card {
+        position: absolute;
+        left: 10px;
+        top: 110px;
+        z-index: 3;
+        width: 80vw;
+    }
+
+    #back-card {
+        position: absolute;
+        right: 20px;
+        top: 30px;
+        z-index: 2;
+        width: 80vw;
+    }
+
+    #form-page {
+        width: 90vw;
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input {
+        width: 100%;
+        height: 35px;
+        font-size: 1em;
+    }
+    #cardname, #number{
+    margin-bottom: 10px;
+    }
+    #expiry-cvc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+
+    button{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(27, 3, 27, 0.932);
+   
+}
+}
